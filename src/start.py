@@ -115,7 +115,7 @@ def list_files(folder):
 
 if __name__ == "__main__":
 
-    corretora = "jornada"
+    corretora = "redrex"
     path = os.path.abspath(f"Project_pdf_csv/src/files/pdf/{corretora}/")
     files = list_files(path)
 
