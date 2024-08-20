@@ -73,7 +73,7 @@ class PDFTableExtrator:
     def add_infos(self, header, content):
         infos = header.iloc[0]
         df = pd.DataFrame([infos.values] * len(content), columns=header.columns)
-        content = pd.concat([content.reset_index(drop=True)], axis=1)
+        content = pd.concat([content.reset_index(drop=True),df.reset_index(drop=True)], axis=1)
         content["Data de Inserção"] = pd.Timestamp("today").normalize()
         return content
 
@@ -115,7 +115,7 @@ def list_files(folder):
 
 if __name__ == "__main__":
 
-    corretora = "redrex"
+    corretora = "jornada"
     path = os.path.abspath(f"Project_pdf_csv/src/files/pdf/{corretora}/")
     files = list_files(path)
 
