@@ -1,0 +1,106 @@
+[0m09:23:31.781206 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdf5c869610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdf5c868890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdf5c87f890>]}
+
+
+============================== 09:23:31.782797 | d564e9e8-282f-42af-9645-c95d015fb3c4 ==============================
+[0m09:23:31.782797 [info ] [MainThread]: Running with dbt=1.8.5
+[0m09:23:31.783455 [debug] [MainThread]: running dbt with arguments {'debug': 'False', 'cache_selected_only': 'False', 'static_parser': 'True', 'quiet': 'False', 'profiles_dir': '/home/saulo/.dbt', 'version_check': 'True', 'use_colors': 'True', 'warn_error': 'None', 'introspect': 'True', 'indirect_selection': 'eager', 'target_path': 'None', 'log_cache_events': 'False', 'write_json': 'True', 'no_print': 'None', 'send_anonymous_usage_stats': 'True', 'log_path': 'logs', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt init', 'fail_fast': 'False', 'partial_parse': 'True', 'printer_width': '80', 'use_experimental_parser': 'False', 'empty': 'None', 'log_format': 'default'}
+[0m09:23:31.787666 [warn ] [MainThread]: [ConfigFolderDirectory]: Unable to parse dict {'dir': PosixPath('/home/saulo/.dbt')}
+[0m09:23:31.788157 [info ] [MainThread]: Creating dbt configuration folder at 
+[0m09:24:01.885267 [debug] [MainThread]: Starter project path: /home/saulo/anaconda3/lib/python3.11/site-packages/dbt/include/starter_project
+[0m09:24:01.887687 [info ] [MainThread]: 
+Your new dbt project "dbt_corretagem" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m09:24:01.888087 [info ] [MainThread]: Setting up your profile.
+[0m09:25:30.993931 [info ] [MainThread]: Profile dbt_corretagem written to /home/saulo/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m09:25:30.994863 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 119.26298, "process_user_time": 0.678909, "process_kernel_time": 0.030716, "process_mem_max_rss": "98696", "process_out_blocks": "88", "process_in_blocks": "0"}
+[0m09:25:30.995302 [debug] [MainThread]: Command `dbt init` succeeded at 09:25:30.995217 after 119.26 seconds
+[0m09:25:30.995599 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdf5c835890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdf5cd4b490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdf60b67610>]}
+[0m09:25:30.995886 [debug] [MainThread]: Flushing usage events
+[0m09:25:56.241794 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff3c895f210>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff3c8388750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff3c854db10>]}
+
+
+============================== 09:25:56.242983 | 2c220301-03c9-4d73-9289-bcf39f4f2bf9 ==============================
+[0m09:25:56.242983 [info ] [MainThread]: Running with dbt=1.8.5
+[0m09:25:56.243494 [debug] [MainThread]: running dbt with arguments {'no_print': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'printer_width': '80', 'send_anonymous_usage_stats': 'True', 'log_path': 'logs', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'log_format': 'default', 'static_parser': 'True', 'indirect_selection': 'eager', 'profiles_dir': '/home/saulo/.dbt', 'use_experimental_parser': 'False', 'use_colors': 'True', 'empty': 'None', 'introspect': 'True', 'debug': 'False', 'target_path': 'None', 'warn_error': 'None', 'quiet': 'False', 'version_check': 'True', 'invocation_command': 'dbt debug'}
+[0m09:25:56.247740 [info ] [MainThread]: dbt version: 1.8.5
+[0m09:25:56.248096 [info ] [MainThread]: python version: 3.11.7
+[0m09:25:56.248362 [info ] [MainThread]: python path: /home/saulo/anaconda3/bin/python
+[0m09:25:56.248607 [info ] [MainThread]: os info: Linux-5.15.146.1-microsoft-standard-WSL2-x86_64-with-glibc2.35
+[0m09:25:56.279104 [info ] [MainThread]: Using profiles dir at /home/saulo/.dbt
+[0m09:25:56.279678 [info ] [MainThread]: Using profiles.yml file at /home/saulo/.dbt/profiles.yml
+[0m09:25:56.280119 [info ] [MainThread]: Using dbt_project.yml file at /home/saulo/Projects/Estudos/Dados/Engenharia de Dados/projects/Project_pdf_csv/src/dbt/dbt_project.yml
+[0m09:25:56.280500 [info ] [MainThread]: adapter type: postgres
+[0m09:25:56.280745 [info ] [MainThread]: adapter version: 1.8.2
+[0m09:25:56.281012 [info ] [MainThread]: Configuration:
+[0m09:25:56.281219 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m09:25:56.281413 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m09:25:56.281602 [info ] [MainThread]: Required dependencies:
+[0m09:25:56.281818 [debug] [MainThread]: Executing "git --help"
+[0m09:25:56.283044 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m09:25:56.283349 [debug] [MainThread]: STDERR: "b''"
+[0m09:25:56.283556 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m09:25:56.283790 [info ] [MainThread]: Connection:
+[0m09:25:56.284006 [info ] [MainThread]:   host: localhost
+[0m09:25:56.284213 [info ] [MainThread]:   port: 5432
+[0m09:25:56.284418 [info ] [MainThread]:   user: postgres
+[0m09:25:56.284612 [info ] [MainThread]:   database: Project_pdf_csv
+[0m09:25:56.284798 [info ] [MainThread]:   schema: public
+[0m09:25:56.284982 [info ] [MainThread]:   connect_timeout: 10
+[0m09:25:56.285169 [info ] [MainThread]:   role: None
+[0m09:25:56.285355 [info ] [MainThread]:   search_path: None
+[0m09:25:56.285551 [info ] [MainThread]:   keepalives_idle: 0
+[0m09:25:56.285753 [info ] [MainThread]:   sslmode: None
+[0m09:25:56.285949 [info ] [MainThread]:   sslcert: None
+[0m09:25:56.286138 [info ] [MainThread]:   sslkey: None
+[0m09:25:56.286438 [info ] [MainThread]:   sslrootcert: None
+[0m09:25:56.286700 [info ] [MainThread]:   application_name: dbt
+[0m09:25:56.286923 [info ] [MainThread]:   retries: 1
+[0m09:25:56.287243 [info ] [MainThread]: Registered adapter: postgres=1.8.2
+[0m09:25:56.288284 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m09:25:56.308396 [debug] [MainThread]: Using postgres connection "debug"
+[0m09:25:56.308764 [debug] [MainThread]: On debug: select 1 as id
+[0m09:25:56.309008 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m09:25:56.314478 [debug] [MainThread]: Postgres adapter: Got a retryable error when attempting to open a postgres connection.
+1 attempts remaining. Retrying in 0 seconds.
+Error:
+connection to server at "localhost" (127.0.0.1), port 5432 failed: FATAL:  password authentication failed for user "postgres"
+
+[0m09:25:56.318250 [debug] [MainThread]: Postgres adapter: Error running SQL: select 1 as id
+[0m09:25:56.318558 [debug] [MainThread]: Postgres adapter: Rolling back transaction.
+[0m09:25:56.318805 [debug] [MainThread]: On debug: No close available on handle
+[0m09:25:56.319039 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m09:25:56.319347 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m09:25:56.319583 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </home/saulo/Projects/Estudos/Dados/Engenharia de Dados/projects/Project_pdf_csv/src/dbt/dbt_project.yml> not found
+
+[0m09:25:56.319833 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Database Error
+  connection to server at "localhost" (127.0.0.1), port 5432 failed: FATAL:  password authentication failed for user "postgres"
+  
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m09:25:56.320414 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_wall_clock_time": 0.1275857, "process_user_time": 0.703498, "process_kernel_time": 0.05945, "process_mem_max_rss": "104884", "process_in_blocks": "1240", "process_out_blocks": "32", "command_success": false}
+[0m09:25:56.320811 [debug] [MainThread]: Command `dbt debug` failed at 09:25:56.320733 after 0.13 seconds
+[0m09:25:56.321065 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m09:25:56.321322 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff3c8388090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff3c83e1d50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff3c895f150>]}
+[0m09:25:56.321618 [debug] [MainThread]: Flushing usage events
