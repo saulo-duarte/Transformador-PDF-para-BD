@@ -1,0 +1,11 @@
+version: 2
+
+sources:
+  - name: investimentos 
+    schema: public
+    description: Dados de pdfs de corretagem
+    tables:
+      - name: corretagem_jornada
+      - name: corretagem_jornada_small
+      - name: corretagem_redrex
+      - name: corretagem_redrex_small
