@@ -11,7 +11,7 @@ WITH formatted AS (
         TO_DATE("data_de_pregao", 'DDMMYYYY') AS data_de_pregao,
         CAST(REPLACE("txop", ',', '.') AS DECIMAL(10, 2)) AS txop
     FROM
-        {{ source('investimentos', 'corretagem_jornada') }}
+        {{ source('investimentos', 'corretagem_redrex') }}
 )
 
 SELECT * 
