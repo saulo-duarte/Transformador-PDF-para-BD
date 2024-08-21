@@ -81,5 +81,25 @@ dbt run
 
 <img src="images/pipeline.png" alt="pipeline" height="160">
 
-## Fluxo de dados
+## Fluxo dos dados
 ![fluxo](images/DW.png)
+
+## Funcionamento
+
+1. Primeiramente, o arquivo visualizacao_pdf.py foi utilizado para visualizar o arquivo PDF e entender como os dados estavam estruturados, utilizando a biblioteca camelot para extrair os dados do PDF em conjunto com a matplotlib para visualização dos dados.
+
+![estrutura](images/estrutura_pdf.png)
+
+2. Após a visualização dos dados, foi criado o diretório src/config, onde foi criado o arquivo config.py, que contém as informações de conexão com o banco de dados.
+
+3. Dentro do diretório config, foi criado o diretorio rules, onde foi criado o arquivo regras.py, que contém as regras de extração dos dados do PDF de acordo com a estrutura do arquivo.
+
+4. O arquivo start.py foi criado para realizar a extração dos dados, utilizando regras.py e as configurações do arquivo postgres.py para se conectar ao banco de dados.
+
+5. Após a extração dos dados, foi criado o diretório dbt, onde foi criado o diretório dbt_corretagem, que contém o arquivo dbt_project.yml, que contém as configurações do projeto dbt, e o diretório models, que contém os diretórios bronze, prata e ouro, que contém os arquivos sql que realizam a transformação dos dados.
+
+6. Na camada bronze são feitas transformações básicas nos dados, como a conversão de tipos de dados e substituição de , por . nos valores decimais.
+
+7. Na camada prata são feitas transformações mais complexas, como a criação de novas colunas e a junção de tabelas.
+
+8. Na camada ouro todos os dados são tratados e KPIs são criados. Deixando os dados prontos para serem consumidos.
