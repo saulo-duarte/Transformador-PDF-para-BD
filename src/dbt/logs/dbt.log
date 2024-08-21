@@ -119,3 +119,18 @@ Runtime Error
 [0m09:49:45.116901 [debug] [MainThread]: Command `dbt run` failed at 09:49:45.116825 after 0.05 seconds
 [0m09:49:45.117181 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3e65322910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3e6530d510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3e65fb7410>]}
 [0m09:49:45.117443 [debug] [MainThread]: Flushing usage events
+[0m10:39:02.530334 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff04ffb1250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff04ffb3310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff04ffb3350>]}
+
+
+============================== 10:39:02.531571 | e0c56b18-75b6-44c6-b7dd-25353b6a5929 ==============================
+[0m10:39:02.531571 [info ] [MainThread]: Running with dbt=1.8.5
+[0m10:39:02.532040 [debug] [MainThread]: running dbt with arguments {'quiet': 'False', 'log_cache_events': 'False', 'static_parser': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/saulo/.dbt', 'log_path': 'logs', 'send_anonymous_usage_stats': 'True', 'invocation_command': 'dbt run', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'use_experimental_parser': 'False', 'version_check': 'True', 'log_format': 'default', 'target_path': 'None', 'debug': 'False', 'partial_parse': 'True', 'introspect': 'True', 'use_colors': 'True', 'write_json': 'True', 'warn_error': 'None', 'no_print': 'None', 'fail_fast': 'False', 'empty': 'False', 'indirect_selection': 'eager', 'printer_width': '80'}
+[0m10:39:02.532427 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /home/saulo/Projects/Estudos/Dados/Engenharia de Dados/projects/Project_pdf_csv/src/dbt/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m10:39:02.533001 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 0.05262684, "process_user_time": 0.628936, "process_kernel_time": 0.060864, "process_mem_max_rss": "94072", "process_out_blocks": "8", "command_success": false, "process_in_blocks": "0"}
+[0m10:39:02.533402 [debug] [MainThread]: Command `dbt run` failed at 10:39:02.533317 after 0.05 seconds
+[0m10:39:02.533687 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff053c2d6d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff04ff66810>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff05428e250>]}
+[0m10:39:02.533970 [debug] [MainThread]: Flushing usage events
