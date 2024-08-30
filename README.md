@@ -17,7 +17,7 @@ O objetivo deste projeto é transformar arquivos PDF de notas de corretagem e tr
 
 ## Tecnologias utilizadas
 
-<img src="images/tools%20.png" alt="tools" height="100">
+<img src="images/tools.png" alt="tools" height="100">
 
 ## Estrutura do projeto
 
